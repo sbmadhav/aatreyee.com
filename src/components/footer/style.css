@@ -1,0 +1,54 @@
+footer {
+  width: 100vw;
+  position: relative;
+}
+footer .footer__message {
+  color: lighten(hsl(217, 16%, 45%), 20%);
+}
+
+footer button {
+  position: absolute;
+  bottom: 0px;
+  right: 15px;
+  padding: 7px 25px;
+  text-transform: uppercase;
+  background: none;
+  color: lighten(hsl(217, 16%, 45%), 20%);
+  border: 3px solid hsl(217, 16%, 45%);
+  border-radius: 0.4rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+footer button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: hsl(229, 25%, 31%);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  footer .footer__message {
+    text-align: left;
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .footer__message {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footer__message {
+    text-align: center;
+    padding-left: 0px;
+  }
+
+  footer button {
+    position: static;
+  }
+}
